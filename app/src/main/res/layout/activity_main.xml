@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/loginArt"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/login_art"
+        android:layout_alignParentTop="true">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome  to \n TradePro"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/loginArt"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/sf"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@id/content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:fontFamily="@font/sf"
+        android:textColor="#505050"
+        android:gravity="center"
+        android:text="Step into the future of trading with our app. Seamlessly manage your investments, track real-time data, and execute trades effortlessly"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/login"
+       android:layout_above="@id/Register"
+        android:text="Login"
+        android:gravity="center"
+        android:background="@drawable/round"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:foregroundGravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/Register"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="Register"
+        android:gravity="center"
+        android:background="@drawable/roundreg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:foregroundGravity="center"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+
+        >
+    </TextView>
+
+
+</RelativeLayout>

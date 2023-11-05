@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+
+
+        <TextView
+            android:id="@+id/verifyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_marginTop="125dp"
+            android:fontFamily="@font/sf"
+            android:text="Verify Your Phone"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:paddingEnd="15dp"
+            android:textStyle="bold"></TextView>
+
+
+        \
+
+        <EditText
+            android:id="@+id/mobNoBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:gravity="center"
+            android:inputType="phone"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round2"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:hint="Enter Mobile Number"
+            android:textColor="#8A8A8A"></EditText>
+
+
+        <EditText
+            android:id="@+id/otpBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobNoBox"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round2"
+            android:paddingEnd="15dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:visibility="visible"
+            android:paddingBottom="15dp"
+            android:hint="Enter Otp"
+            android:textColor="#8A8A8A"></EditText>
+
+        <TextView
+            android:id="@+id/login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/round"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Send Otp"
+            android:textColor="@color/white"
+            android:textSize="20sp"></TextView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_watchlist"
+        android:title="Watchlist"
+        android:icon="@drawable/watchlist"
+        app:showAsAction="withText"
+         />
+    <item
+        android:id="@+id/menu_portfolio"
+        android:title="Portfolio"
+        android:icon="@drawable/portfolio"
+        app:showAsAction="withText"
+        />
+    <item
+        android:id="@+id/menu_orders"
+        android:title="Orders"
+        android:icon="@drawable/order"
+        app:showAsAction="withText"
+         />
+    <item
+        android:id="@+id/menu_account"
+        android:title="Account"
+        android:icon="@drawable/account"
+        app:showAsAction="withText"
+         />
+</menu>

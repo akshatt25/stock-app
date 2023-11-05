@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        >
+    </ImageView>
+
+
+
+    <TextView
+        android:id="@+id/firstStep"
+        android:layout_marginTop="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take First Step \n to Become"
+        android:textColor="#8A8A8A"
+        android:textSize="25sp"
+        android:fontFamily="@font/sf"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/proTrader"
+        android:layout_below="@id/firstStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="A Pro Trader"
+        android:textSize="30sp"
+        android:fontFamily="@font/sf"
+        android:textStyle="bold"
+        android:layout_marginStart="22dp"
+        ></TextView>
+
+
+
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_below="@id/proTrader"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#8A8A8A"
+        android:background="@drawable/round2"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/mailBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/nameBox"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#8A8A8A"
+        android:background="@drawable/round2"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/pwBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Create Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/mailBox"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#8A8A8A"
+        android:background="@drawable/round2"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/confirmpwBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/pwBox"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#8A8A8A"
+        android:background="@drawable/round2"
+        >
+    </EditText>
+
+
+
+
+    <TextView
+        android:id="@+id/login2"
+        android:text="Register"
+        android:gravity="center"
+        android:background="@drawable/round"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="75dp"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:foregroundGravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+
+</RelativeLayout>

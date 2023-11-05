@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:layout_marginBottom="0.75dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/loginArt"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_marginStart="12.5dp"
+        android:src="@drawable/img"
+        android:padding="7.5dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        ></de.hdodenhof.circleimageview.CircleImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/loginArt">
+
+        <LinearLayout
+            android:id="@+id/stockDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/changePrice"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/symbole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="SYMBOLE"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="Share Name"
+                android:fontFamily="@font/sf"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#8A8A8A"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignEnd="@id/changePerc"
+            android:textStyle="bold"
+            android:fontFamily="@font/sf"
+            android:gravity="center"
+            android:text="not known"
+            android:textColor="#C8000000"
+            android:textSize="15sp"></TextView>
+
+        <TextView
+            android:id="@+id/changePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nk"
+
+            android:layout_toStartOf="@id/changePerc"
+            android:gravity="start"
+            android:fontFamily="@font/sf"
+            android:textStyle="bold"
+            android:text="0.00"></TextView>
+
+
+        <TextView
+            android:id="@+id/changePerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nk"
+            android:layout_marginEnd="12.5dp"
+            android:fontFamily="@font/sf"
+            android:textStyle="bold"
+           android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:gravity="end"
+            android:text="0.00"></TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
